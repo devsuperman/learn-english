@@ -8,7 +8,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "check": "astro check"
+    "verify": "node scripts/check-site.cjs"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.42.11",

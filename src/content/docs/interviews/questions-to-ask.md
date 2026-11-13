@@ -2,7 +2,7 @@
 title: Questions to ask the interviewer
 description: Smart questions to ask at the end of an interview.
 sidebar:
-  order: 3
+  order: 6
 ---
 
 At the end, the interviewer usually asks: *"Do you have any questions for us?"* **Always say yes.** Good questions show interest and help you decide whether you want the job.

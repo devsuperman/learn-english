@@ -31,8 +31,7 @@ Every lesson follows `templates/lesson.mdx`: **Explanation → Key phrases → C
 - [x] Interactive components: `Quiz`, `FixIt`, `Say` (text-to-speech)
 - [x] Lesson template
 - [x] First lessons in each module + phrasebank + interview question bank
-- [ ] Interviews: thinking out loud in technical interviews
-- [ ] Interviews: salary and visa conversations
+- [x] Interviews: tricky recruiter questions, thinking out loud, salary and logistics
 - [x] Grammar: 10 lessons (questions, present tenses, past vs. present perfect, future, articles, prepositions, polite modals, comparatives, conditionals, passive voice)
 - [x] Vocabulary: false friends, phrasal verbs, pronunciation (with text-to-speech listen buttons)
 - [ ] Work: code review comments, meetings, feedback, emails
