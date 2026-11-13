@@ -15,10 +15,11 @@ A crash course to help people **learn, practice, do job interviews, and work in 
 
 | Module | Focus |
 | --- | --- |
-| 1. Foundations | Work grammar, common mistakes, false friends, pronunciation |
-| 2. Daily practice | 15-minute routine, small talk, describing your job |
-| 3. Job interviews | Tell me about yourself, STAR, technical talk, salary, questions to ask |
-| 4. Working in English | Standups, Slack, emails, code reviews, meetings, feedback |
+| 1. Grammar | Questions, present/past/future tenses, articles, prepositions, polite modals, comparatives, conditionals, passive |
+| 2. Vocabulary & pronunciation | Common mistakes, false friends, phrasal verbs, pronunciation |
+| 3. Daily practice | 15-minute routine, small talk, describing your job |
+| 4. Job interviews | Tell me about yourself, STAR, technical talk, salary, questions to ask |
+| 5. Working in English | Standups, Slack, emails, code reviews, meetings, feedback |
 | Resources | Phrasebank, interview question bank |
 
 Every lesson follows `templates/lesson.mdx`: **Explanation → Key phrases → Common mistakes → Exercises → Today's task** (15–20 minutes).
@@ -32,7 +33,9 @@ Every lesson follows `templates/lesson.mdx`: **Explanation → Key phrases → C
 - [x] First lessons in each module + phrasebank + interview question bank
 - [ ] Interviews: thinking out loud in technical interviews
 - [ ] Interviews: salary and visa conversations
-- [ ] Foundations: past simple vs. present perfect; false friends; pronunciation
+- [x] Grammar: 8 lessons (questions, present tenses, past vs. present perfect, future, articles, prepositions, polite modals, comparatives)
+- [ ] Grammar: conditionals, passive voice
+- [ ] Vocabulary: false friends, phrasal verbs, pronunciation
 - [ ] Work: code review comments, meetings, feedback, emails
 - [ ] Test with 3–5 real learners and collect feedback
 

@@ -6,10 +6,11 @@ A free crash course to **learn, practice, do job interviews, and work in English
 
 ## Modules
 
-1. **Foundations**: work grammar and common mistakes
-2. **Daily practice**: 15-minute routines
-3. **Job interviews**: Tell me about yourself, STAR, questions to ask
-4. **Working in English**: standups, Slack, code reviews, meetings
+1. **Grammar**: questions, tenses, articles, prepositions, polite modals, comparatives
+2. **Vocabulary & pronunciation**: common mistakes, false friends, phrasal verbs
+3. **Daily practice**: 15-minute routines
+4. **Job interviews**: Tell me about yourself, STAR, questions to ask
+5. **Working in English**: standups, Slack, code reviews, meetings
 
 See [PLAN.md](PLAN.md) for the roadmap.
 

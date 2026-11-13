@@ -1,0 +1,73 @@
+---
+title: "Polite modals: could, would, should"
+description: Ask, suggest and disagree politely, the tone that matters in international teams.
+sidebar:
+  order: 7
+---
+
+import Quiz from '../../../components/Quiz.astro';
+import FixIt from '../../../components/FixIt.astro';
+
+## Explanation
+
+In international teams, **tone** matters as much as grammar. Direct sentences like *"Review my PR"* can sound rude in English, even if they are normal in your language. **Modal verbs** make your sentences softer.
+
+| Modal | Use | Example |
+| --- | --- | --- |
+| **could** | Polite requests, possibilities | ***Could** you review my PR?* |
+| **would** | Very polite requests, preferences | ***Would** you mind joining the call?* / *I**'d** prefer to…* |
+| **should** | Advice, recommendations | *We **should** add a test for this.* |
+| **might / may** | Possibility, soft suggestions | *This **might** cause a memory leak.* |
+| **can** | Ability, informal requests | ***Can** you hear me?* |
+
+After a modal, use the **base verb without "to"**: *could **help*** (not *could to help*).
+
+### Softening disagreement
+
+- *I see your point, but **wouldn't** it be simpler to…?*
+- ***Could** we consider using a queue here?*
+- *I **might** be wrong, but I think…*
+- *It **might** be worth adding a cache.*
+
+## Key phrases
+
+- *Could you share your screen?*
+- *Would you mind taking a look at this?* (+ **-ing**)
+- *Would it be possible to move the meeting?*
+- *I'd like to suggest a different approach.*
+- *Maybe we should split this PR into two.*
+
+## Common mistakes
+
+| ❌ Don't say | ✅ Say | Why |
+| --- | --- | --- |
+| Review my PR. | **Could you** review my PR, please? | Commands sound rude. |
+| Could you **to** help me? | Could you **help** me? | No *to* after modals. |
+| Would you mind **to check** it? | Would you mind **checking** it? | *Would you mind* + **-ing**. |
+| You **must** change this. *(code review)* | You **might want to** change this. / **Could** we change this? | *Must* sounds too strong. |
+| I **want** a coffee break. | I**'d like** a coffee break. | *I'd like* is more polite. |
+
+## Exercises
+
+<Quiz
+  question="Which is the most polite way to ask for a code review?"
+  options={["Review my PR now.", "You need to review my PR.", "Could you review my PR when you have a moment?"]}
+  answer={2}
+  explanation="'Could you…' plus 'when you have a moment' is polite and respects the other person's time."
+/>
+
+<FixIt
+  sentence="Would you mind to explain the architecture?"
+  answers={["Would you mind explaining the architecture?"]}
+  explanation="'Would you mind' is followed by a verb with -ing."
+/>
+
+<FixIt
+  sentence="Could you to send me the logs?"
+  answers={["Could you send me the logs?", "Could you send me the logs, please?"]}
+  explanation="After a modal verb, use the base verb without 'to'."
+/>
+
+## Today's task
+
+Rewrite **three** direct messages you sent recently (*"Check this"*, *"Send me the file"*) as polite requests with **could** or **would you mind**.

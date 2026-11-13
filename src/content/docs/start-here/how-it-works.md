@@ -29,12 +29,15 @@ Every lesson has the same five parts and takes **15–20 minutes**:
 
 ## Suggested schedule (4 weeks)
 
+You can follow the modules in order, or start with the one you need most. If you have an interview soon, start with **Job interviews** and do one **Grammar** lesson per day alongside it.
+
+
 | Week | Module | Goal |
 | --- | --- | --- |
-| 1 | Foundations + Daily practice | Build a daily habit and fix the basics |
+| 1 | Grammar + Daily practice | Fix the structures you use every day and build a daily habit |
 | 2 | Job interviews (part 1) | Record your "Tell me about yourself" |
 | 3 | Job interviews (part 2) | Do a full mock interview |
-| 4 | Working in English | Use English in your real (or simulated) work |
+| 4 | Vocabulary + Working in English | Use English in your real (or simulated) work |
 
 :::tip[Record yourself on day 1]
 Record a 1-minute video introducing yourself today. Record it again at the end of the course. Comparing the two is the best way to see your progress.
