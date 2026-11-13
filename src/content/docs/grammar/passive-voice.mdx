@@ -1,0 +1,108 @@
+---
+title: Passive voice
+description: Write incident reports, documentation and release notes, and know when NOT to use the passive.
+sidebar:
+  order: 10
+---
+
+import Quiz from '../../../components/Quiz.astro';
+import FixIt from '../../../components/FixIt.astro';
+
+## Explanation
+
+In the **active** voice, the subject **does** the action. In the **passive** voice, the subject **receives** the action.
+
+- Active: ***Maria** fixed the bug.* (focus on who did it)
+- Passive: ***The bug** was fixed.* (focus on what happened)
+
+**Form:** **be** (in the right tense) + **past participle**.
+
+| Tense | Passive | Example |
+| --- | --- | --- |
+| Present simple | is / are + participle | *Logs **are stored** in S3.* |
+| Present continuous | is / are **being** + participle | *Your PR **is being reviewed**.* |
+| Past simple | was / were + participle | *The service **was restarted** at 3 a.m.* |
+| Present perfect | has / have **been** + participle | *The issue **has been fixed**.* |
+| Future | will **be** + participle | *The feature **will be released** on Monday.* |
+| Modal | can / should / must **be** + participle | *This endpoint **should be deprecated**.* |
+
+If you want to say who did the action, use **by**: *The library **is maintained by** Google.*
+
+### When to use the passive
+
+- **Documentation:** *Requests **are authenticated** with a JWT.*
+- **Incident reports and release notes:** *The outage **was caused** by an expired certificate.*
+- **When the person is unknown or not important:** *The API key **was leaked** in a public repo.*
+- **Blameless postmortems:** focus on the system, not on people.
+
+### When NOT to use it
+
+In **interviews**, use the **active** voice with **I**. Interviewers want to know what *you* did.
+
+- ❌ *The database **was migrated** to PostgreSQL.* (who did it?)
+- ✅ ***I migrated** the database to PostgreSQL.*
+
+## Key phrases
+
+- *The bug **was introduced** in version 2.3.*
+- *The fix **has been deployed** to production.*
+- *All data **is encrypted** at rest.*
+- *This method **should not be called** directly.*
+- *The meeting **has been moved** to Thursday.*
+- *I **was asked** to lead the migration.* (passive + your role: useful in interviews)
+
+## Common mistakes
+
+| ❌ Don't say | ✅ Say | Why |
+| --- | --- | --- |
+| The bug **was fix**. | The bug was **fixed**. | Use the past participle. |
+| The error **was happened** yesterday. | The error **happened** yesterday. | *Happen* has no object, so it can't be passive. Same for *occur*, *arrive*, *appear*. |
+| The tests **are run** now. *(in progress)* | The tests **are being run** now. | In progress = *being* + participle. |
+| The PR **has merged**. | The PR **has been merged**. | Passive present perfect needs *been*. |
+| The project **was led by me**. *(interview)* | **I led** the project. | Use the active voice to show ownership. |
+
+## Exercises
+
+<Quiz
+  question="Choose the correct sentence for an incident report."
+  options={["The outage was happened because of a full disk.", "The outage was caused by a full disk.", "The outage caused by a full disk."]}
+  answer={1}
+  explanation="'Cause' takes an object, so the passive works: was caused by. 'Happen' can't be passive, and the third option is missing 'was'."
+/>
+
+<Quiz
+  question="'Your request ___ right now. Please wait.'"
+  options={["is processed", "is being processed", "has processed"]}
+  answer={1}
+  explanation="It's happening now, so use the passive continuous: is being + participle."
+/>
+
+<Quiz
+  question="In a job interview, which sentence is best?"
+  options={["The CI pipeline was rebuilt and build time was reduced by 60%.", "I rebuilt the CI pipeline and reduced build time by 60%."]}
+  answer={1}
+  explanation="In interviews, use the active voice with 'I' so the interviewer knows it was your work."
+/>
+
+<FixIt
+  sentence="The new version will released next week."
+  answers={["The new version will be released next week."]}
+  explanation="Future passive: will + be + past participle."
+/>
+
+<FixIt
+  sentence="The error was occurred during the deploy."
+  answers={["The error occurred during the deploy.", "The error occurred during the deployment."]}
+  explanation="'Occur' has no object, so it can't be passive. Use the active form: occurred."
+/>
+
+<FixIt
+  sentence="The ticket has assigned to me."
+  answers={["The ticket has been assigned to me."]}
+  explanation="Present perfect passive: has + been + past participle."
+/>
+
+## Today's task
+
+1. Write a **three-sentence incident summary** in the passive voice: what happened, what caused it, and how it was fixed.
+2. Then rewrite one of your achievements in the **active** voice with **I**, as you would say it in an interview.

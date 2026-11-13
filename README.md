@@ -6,7 +6,7 @@ A free crash course to **learn, practice, do job interviews, and work in English
 
 ## Modules
 
-1. **Grammar**: questions, tenses, articles, prepositions, polite modals, comparatives
+1. **Grammar**: questions, tenses, articles, prepositions, polite modals, comparatives, conditionals, passive voice
 2. **Vocabulary & pronunciation**: common mistakes, false friends, phrasal verbs
 3. **Daily practice**: 15-minute routines
 4. **Job interviews**: Tell me about yourself, STAR, questions to ask
