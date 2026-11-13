@@ -14,3 +14,4 @@ Getting the job is step one. This module is about **keeping it**: communicating 
 3. Code review comments *(coming soon)*
 4. Meetings: interrupting, agreeing and disagreeing *(coming soon)*
 5. Giving and receiving feedback *(coming soon)*
+6. Writing work emails *(coming soon)*

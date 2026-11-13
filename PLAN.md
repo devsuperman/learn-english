@@ -24,27 +24,54 @@ A crash course to help people **learn, practice, do job interviews, and work in 
 
 Every lesson follows `templates/lesson.mdx`: **Explanation → Key phrases → Common mistakes → Exercises → Today's task** (15–20 minutes).
 
-## Roadmap
+## Pending tasks
 
-### Phase 1: MVP
-- [x] Site scaffold (Astro + Starlight), GitHub Pages workflow
-- [x] Interactive components: `Quiz`, `FixIt`, `Say` (text-to-speech)
-- [x] Lesson template
-- [x] First lessons in each module + phrasebank + interview question bank
-- [x] Interviews: tricky recruiter questions, thinking out loud, salary and logistics
-- [x] Grammar: 10 lessons (questions, present tenses, past vs. present perfect, future, articles, prepositions, polite modals, comparatives, conditionals, passive voice)
-- [x] Vocabulary: false friends, phrasal verbs, pronunciation (with text-to-speech listen buttons)
-- [ ] Work: code review comments, meetings, feedback, emails
-- [ ] Test with 3–5 real learners and collect feedback
+Pick up from here. Work top to bottom; each content task follows `templates/lesson.mdx` and the conventions in `CLAUDE.md`. When a task is done, tick it here, remove its *(coming soon)* entry from the module `index.md`, and run `npm run build` + `npm run preview` + `npm run verify`.
 
-### Phase 2: More interaction
+### 1. Publish (owner action, not code)
+- [ ] Merge PR devsuperman/learn-english#1 (`claude/stoic-turing-cm76hb` → `main`)
+- [ ] In **Settings → Pages → Build and deployment → Source**, choose **GitHub Actions**
+- [ ] Open https://devsuperman.github.io/learn-english/ and confirm the deploy worked (check the Actions tab if not)
+
+### 2. Finish module 5: Working in English (`src/content/docs/work/`)
+- [ ] `code-review-comments.mdx`: writing and answering PR comments (nit, suggestion, blocking), polite tone, LGTM, asking "why"; link to *Polite modals*
+- [ ] `meetings.mdx`: interrupting politely, agreeing and disagreeing, asking for clarification, summarizing action items
+- [ ] `feedback.mdx`: giving and receiving feedback (1:1s, retros, performance reviews); softeners; responding to criticism
+- [ ] `emails.mdx`: work email structure, subject lines, openings and closings, follow-ups (add it to `work/index.md` as lesson 6)
+
+### 3. Finish module 3: Daily practice (`src/content/docs/practice/`)
+- [ ] `small-talk.mdx`: before meetings, on-call chat, weekends, weather; safe vs. unsafe topics; keeping a conversation going
+- [ ] `describing-your-job.mdx`: explaining your role, team, product and tech stack to non-technical and technical people
+- [ ] `shadowing.mdx`: step-by-step shadowing technique with tech talks and podcasts; could use `<Say>` for practice sentences
+
+### 4. Quality and polish
+- [ ] Test with 3–5 real learners (different native languages) and collect feedback
+- [ ] Add a `LICENSE` (suggestion: CC BY-SA 4.0 for content, MIT for code)
+- [ ] Add `pretension` (salary) to the false friends table in `vocabulary/false-friends.mdx`
+- [ ] Consider running `npm run verify` in CI (needs Playwright + Chromium in the workflow)
+- [ ] Accessibility pass: keyboard-only use of `Quiz`/`FixIt`/`Say`, color contrast in dark mode
+- [ ] Social preview image (Open Graph) for sharing the site
+
+### 5. Phase 2: More interaction
 - [ ] Flashcards for key phrases (spaced repetition, saved in the browser)
-- [ ] Progress tracking per lesson
-- [ ] Printable cheat sheets
+- [ ] Progress tracking per lesson (mark as done, saved in the browser)
+- [ ] Printable cheat sheets (grammar quick reference, phrasebank)
 
-### Phase 3: AI practice
+### 6. Phase 3: AI practice
 - [ ] AI mock interviewer (asks questions, gives feedback on answers)
 - [ ] AI writing feedback for Slack messages and emails
+
+## Done
+
+- [x] Site scaffold (Astro + Starlight), GitHub Pages workflow (builds PRs, deploys `main`)
+- [x] Interactive components: `Quiz`, `FixIt`, `Say` (text-to-speech)
+- [x] Lesson template, `CLAUDE.md`, `npm run verify` end-to-end check
+- [x] Grammar: all 10 lessons
+- [x] Vocabulary & pronunciation: all 4 lessons
+- [x] Job interviews: all 6 lessons
+- [x] Daily practice: 15-minute daily routine
+- [x] Working in English: daily standups, Slack messages
+- [x] Resources: phrasebank, interview question bank
 
 ## Success metrics
 - Lesson completion rate
