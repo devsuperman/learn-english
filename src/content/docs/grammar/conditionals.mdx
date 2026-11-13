@@ -1,0 +1,105 @@
+---
+title: "Conditionals: if…"
+description: Talk about system behavior, risks, hypothetical situations and lessons learned.
+sidebar:
+  order: 9
+---
+
+import Quiz from '../../../components/Quiz.astro';
+import FixIt from '../../../components/FixIt.astro';
+
+## Explanation
+
+Tech work is full of *if*: *if the cache is empty…*, *if we deploy today…*, *what would you do if…?* English has four main patterns. Each one has a different job.
+
+| Type | Structure | Use | Example |
+| --- | --- | --- | --- |
+| **Zero** | if + present, **present** | How a system **always** behaves (facts, rules) | *If the token **expires**, the API **returns** 401.* |
+| **First** | if + present, **will** + verb | **Real** possibilities in the future: plans, risks | *If we **deploy** today, we'**ll have** time to monitor it.* |
+| **Second** | if + past, **would** + verb | **Imaginary** or unlikely situations | *If I **had** more time, I **would rewrite** this module.* |
+| **Third** | if + had + past participle, **would have** + past participle | An **imaginary past**: regrets, lessons learned | *If we **had added** tests, we **would have caught** the bug.* |
+
+**The key rule:** never use *will* or *would* in the **if** part.
+
+- ✅ *If it **fails**, I'll roll back.* ❌ *If it **will fail**, I'll roll back.*
+- ✅ *If I **were** the tech lead, I'd…* ❌ *If I **would be** the tech lead…*
+
+In the second conditional, use **were** for every person in formal English: *If I **were** you…*, *If it **were** simpler…*
+
+### Other useful words
+
+- **unless** = if… not: *We won't release **unless** all tests pass.*
+- **in case** = as a precaution: *Keep the old version **in case** we need to roll back.*
+- **as long as** = only if: *You can merge **as long as** CI is green.*
+
+### Conditionals in interviews
+
+Interviewers often ask hypothetical questions with the **second conditional**. Answer with the same structure:
+
+> **Q:** *What **would** you **do** if you **disagreed** with your tech lead?*
+> **A:** *First, I**'d** ask questions to understand their reasoning. If I still **thought** there was a better option, I**'d** share data to support my point.*
+
+## Key phrases
+
+- *If the queue fills up, the service starts dropping messages.* (zero)
+- *If we don't fix this today, it'll block the release.* (first)
+- *What would happen if the database went down?* (second)
+- *If I were you, I'd split this PR into smaller ones.* (second, advice)
+- *If we had monitored the disk, we wouldn't have had the outage.* (third, postmortem)
+
+## Common mistakes
+
+| ❌ Don't say | ✅ Say | Why |
+| --- | --- | --- |
+| If it **will** fail, I'll roll back. | If it **fails**, I'll roll back. | No *will* in the *if* part. |
+| If I **would have** more time, I'd refactor it. | If I **had** more time, I'd refactor it. | No *would* in the *if* part. |
+| If I **was** you… | If I **were** you… | Use *were* in this fixed expression. |
+| **If** we don't test, we **won't** release **unless**… | We won't release **unless** we test. | *Unless* already means *if… not*. |
+| If we **had tested**, we **would catch** the bug. | If we had tested, we **would have caught** the bug. | Imaginary past needs *would have* + past participle. |
+
+## Exercises
+
+<Quiz
+  question="'If the request ___ a valid token, the server returns 200.' (a fact about the system)"
+  options={["will have", "has", "would have"]}
+  answer={1}
+  explanation="It's a fact about how the system always works, so use the zero conditional: present + present."
+/>
+
+<Quiz
+  question="An interviewer asks: 'What ___ you do if a deploy broke production?'"
+  options={["will", "would", "do"]}
+  answer={1}
+  explanation="It's a hypothetical situation ('broke' is past), so use the second conditional: would."
+/>
+
+<Quiz
+  question="'We won't merge it ___ someone reviews it.'"
+  options={["if", "unless", "in case"]}
+  answer={1}
+  explanation="'Unless' means 'if… not': we won't merge it if nobody reviews it."
+/>
+
+<FixIt
+  sentence="If the build will fail, I will fix it."
+  answers={["If the build fails, I will fix it.", "If the build fails, I'll fix it."]}
+  explanation="Don't use 'will' after 'if'. Use the present simple: fails."
+/>
+
+<FixIt
+  sentence="If I would have more experience with Go, I would apply for that job."
+  answers={["If I had more experience with Go, I would apply for that job.", "If I had more experience with Go, I'd apply for that job."]}
+  explanation="Second conditional: 'if' + past simple (had), then 'would' + verb."
+/>
+
+<FixIt
+  sentence="If we had added monitoring, we would detect the problem earlier."
+  answers={["If we had added monitoring, we would have detected the problem earlier.", "If we'd added monitoring, we would have detected the problem earlier.", "If we had added monitoring, we'd have detected the problem earlier."]}
+  explanation="Third conditional (imaginary past): would have + past participle."
+/>
+
+## Today's task
+
+1. Write **two zero conditionals** about how a system you know works.
+2. Answer this interview question out loud with the second conditional: *"What would you do if you missed a deadline?"*
+3. Write **one third conditional** about a lesson you learned from a past bug or incident.

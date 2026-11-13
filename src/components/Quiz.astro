@@ -1,0 +1,64 @@
+---
+/**
+ * Multiple-choice question with instant feedback.
+ *
+ * <Quiz
+ *   question="Which sentence is correct?"
+ *   options={["I made an interview", "I had an interview"]}
+ *   answer={1}
+ *   explanation="We *have* or *do* interviews, we don't *make* them."
+ * />
+ */
+interface Props {
+  question: string;
+  options: string[];
+  /** Zero-based index of the correct option. */
+  answer: number;
+  explanation?: string;
+}
+const { question, options, answer, explanation } = Astro.props;
+---
+
+<quiz-question class="exercise not-content" data-answer={answer}>
+  <p class="exercise-label">Quiz</p>
+  <p class="exercise-question">{question}</p>
+  <div class="quiz-options" role="group" aria-label={question}>
+    {
+      options.map((option, i) => (
+        <button type="button" class="quiz-option" data-index={i}>
+          {option}
+        </button>
+      ))
+    }
+  </div>
+  <p class="exercise-feedback" aria-live="polite" hidden></p>
+  {explanation && <p class="exercise-explanation" hidden>{explanation}</p>}
+</quiz-question>
+
+<script>
+  class QuizQuestion extends HTMLElement {
+    connectedCallback() {
+      const answer = Number(this.dataset.answer);
+      const buttons = [...this.querySelectorAll<HTMLButtonElement>('.quiz-option')];
+      const feedback = this.querySelector<HTMLElement>('.exercise-feedback')!;
+      const explanation = this.querySelector<HTMLElement>('.exercise-explanation');
+
+      buttons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const chosen = Number(button.dataset.index);
+          const correct = chosen === answer;
+          buttons.forEach((b) => b.classList.remove('is-correct', 'is-wrong'));
+          button.classList.add(correct ? 'is-correct' : 'is-wrong');
+          feedback.hidden = false;
+          feedback.textContent = correct ? 'Correct!' : 'Not quite. Try again.';
+          feedback.dataset.state = correct ? 'correct' : 'wrong';
+          if (correct) {
+            buttons.forEach((b) => (b.disabled = true));
+            if (explanation) explanation.hidden = false;
+          }
+        });
+      });
+    }
+  }
+  customElements.define('quiz-question', QuizQuestion);
+</script>

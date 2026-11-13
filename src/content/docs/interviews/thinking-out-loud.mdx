@@ -1,0 +1,109 @@
+---
+title: Thinking out loud in technical interviews
+description: Communicate your reasoning during coding and system design interviews.
+sidebar:
+  order: 4
+---
+
+import Quiz from '../../../components/Quiz.astro';
+import FixIt from '../../../components/FixIt.astro';
+
+## Explanation
+
+In a technical interview, the interviewer evaluates **how you think**, not only the final code. If you code in silence for 20 minutes, they can't evaluate you, even if your solution is perfect.
+
+**Thinking out loud** means you say what you're doing and why, while you do it. It feels strange in a second language, so **practice it**. Use this five-step structure:
+
+| Step | What to do | What to say |
+| --- | --- | --- |
+| 1. Clarify | Repeat the problem and ask questions | *Just to make sure I understand: …* |
+| 2. Example | Walk through a small example | *Let me try a quick example: …* |
+| 3. Plan | Describe your approach **before** coding | *My first idea is… The trade-off is…* |
+| 4. Code | Narrate the main steps | *Now I'm going to… This loop handles…* |
+| 5. Test | Check edge cases and complexity | *Let me test it with an empty list…* |
+
+## Key phrases
+
+### Clarifying the problem
+- *Just to make sure I understand, you want me to…*
+- *Can I assume the input is always sorted?*
+- *What should happen if the list is empty?*
+- *How big can the input be?*
+- *Should I optimize for time or for memory?*
+
+### Explaining your approach
+- *My first idea is a brute-force solution: …*
+- *That would be O(n²). I think we can do better with a hash map.*
+- *The trade-off here is more memory for faster lookups.*
+- *Let me start with the simple version, and then optimize it.*
+
+### While you code
+- *I'm going to create a helper function for this.*
+- *This variable keeps track of…*
+- *I'll skip input validation for now, and come back to it at the end.*
+
+### When you get stuck
+- *Let me think about this for a moment.*
+- *I'm not sure about this part. Can I talk through two options?*
+- *Hmm, I think there's a bug here. Let me trace it with the example.*
+- *Could you give me a hint about…?*
+
+### Testing and wrapping up
+- *Let me walk through the code with the example.*
+- *An edge case would be… In that case, the function returns…*
+- *The time complexity is O(n), and the space complexity is O(n).*
+- *If I had more time, I would…*
+
+### System design interviews
+- *Let me start with the requirements: how many users, reads vs. writes…*
+- *At a high level, we have a client, an API layer, and a database.*
+- *The bottleneck here would probably be…*
+- *To scale this, we could add a cache / a queue / read replicas.*
+
+### Saying numbers and symbols
+
+| Write | Say |
+| --- | --- |
+| O(n²) | "O of n squared" |
+| O(log n) | "O of log n" |
+| `i++` | "i plus plus" / "increment i" |
+| `arr[i]` | "arr at index i" / "arr of i" |
+| `!=` | "not equal to" |
+| `x => x * 2` | "x arrow x times two" / "a function that doubles x" |
+| `()` `[]` `{}` | parentheses, (square) brackets, curly braces |
+
+## Common mistakes
+
+| ❌ Don't do or say | ✅ Do or say |
+| --- | --- |
+| Start coding immediately, in silence. | Clarify, give an example, and explain your plan first. |
+| *I don't know.* *(and stop)* | *I'm not sure, but my first guess would be… Let me check.* |
+| *Wait. Wait. Wait.* | *Give me a second to think about this.* |
+| *Is correct?* | ***Is it** correct? / Does that make sense?* |
+| *The complexity is O(n) because yes.* | *It's O(n) **because** we visit each element once.* |
+
+## Exercises
+
+<Quiz
+  question="What should you do FIRST in a coding interview?"
+  options={["Start writing code to save time.", "Ask clarifying questions about the problem.", "Explain the time complexity."]}
+  answer={1}
+  explanation="Clarify first. A wrong assumption at the start can waste the whole interview."
+/>
+
+<Quiz
+  question="You're stuck. What's the best thing to say?"
+  options={["I don't know.", "Let me think about this for a moment. I'm considering two options…", "Can I skip this question?"]}
+  answer={1}
+  explanation="Keep talking: share what you're considering. Interviewers often help when they understand your thinking."
+/>
+
+<FixIt
+  sentence="Can I assume that the input is sorted? Is correct?"
+  answers={["Can I assume that the input is sorted? Is that correct?", "Can I assume that the input is sorted? Is it correct?", "Can I assume the input is sorted? Is that correct?", "Can I assume the input is sorted? Is that right?", "Can I assume that the input is sorted? Is that right?"]}
+  explanation="English needs a subject: 'Is that correct?' or 'Is that right?'"
+/>
+
+## Today's task
+
+Choose an easy coding problem (for example, *reverse a string* or *find duplicates in a list*). Solve it **out loud** in English, following the five steps, and record yourself. Listen back: did you stay silent for more than 20 seconds anywhere?

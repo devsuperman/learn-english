@@ -1,0 +1,98 @@
+---
+title: False friends and confusing words
+description: Words that look familiar but mean something different in English, plus pairs that confuse everyone.
+sidebar:
+  order: 2
+---
+
+import Quiz from '../../../components/Quiz.astro';
+import FixIt from '../../../components/FixIt.astro';
+
+## Explanation
+
+**False friends** are English words that look like words in your language but have a **different meaning**. They are common for speakers of Portuguese, Spanish, French and Italian, but speakers of many languages mix them up. They are dangerous because you feel confident when you use them, so nobody realizes the misunderstanding.
+
+## False friends at work
+
+| English word | What it really means | What you probably mean |
+| --- | --- | --- |
+| **actually** | in fact, really | **currently**, at the moment |
+| **eventually** | in the end, after a long time | **occasionally**, sometimes / **possibly** |
+| **pretend** | to act as if something is true (fake) | **intend**, **plan** to |
+| **attend** | to go to (a meeting, a course) | **assist**, **help**, **serve** (a customer) |
+| **assist** | to help | **attend**, be present at |
+| **realize** | to understand suddenly | **do**, **carry out**, **hold** (an event) |
+| **resume** (verb) | to continue after a pause | **summarize** |
+| **support** | to help, to back | **stand**, **tolerate**, **bear** |
+| **library** | a place to borrow books / a code library | **bookstore** (a shop) |
+| **college** | university (US) | high school |
+| **parents** | mother and father only | **relatives** (all your family) |
+| **sensible** | reasonable, practical | **sensitive** (easily affected) |
+| **exit** | a way out | **success** |
+| **lecture** | a talk, a class | **reading** |
+| **push / pull** | push = away from you, pull = toward you | (on doors, often confused) |
+| **notice** | to see / an announcement | **news** |
+| **costume** | clothes for a party or a play | **habit**, **custom** |
+
+### In tech, specifically
+
+- A **library** in code (*a React library*) is correct, but a shop that sells books is a **bookstore**.
+- **Résumé** (noun, US) / **CV** (UK) = the document you send for a job. **To resume** (verb) = to continue. *Let's resume the meeting after lunch.*
+- **Deception** = lying to someone. When you feel let down, it's **disappointment**.
+
+## Confusing pairs (for everyone)
+
+| Pair | Difference | Example |
+| --- | --- | --- |
+| **lose / loose** | *lose* = not have anymore; *loose* = not tight | *Don't **lose** your API key. / a **loose** connection* |
+| **affect / effect** | *affect* = verb; *effect* = noun | *The bug **affects** users. / It has no **effect**.* |
+| **its / it's** | *its* = possessive; *it's* = it is | ***It's** fast because of **its** cache.* |
+| **borrow / lend** | *borrow* = take; *lend* = give | *Can I **borrow** your charger? / Can you **lend** me…?* |
+| **advice / advise** | *advice* = noun (uncountable); *advise* = verb | *Can you give me some **advice**? / I'd **advise** you to…* |
+| **then / than** | *then* = after that; *than* = comparison | *Faster **than** before. First test, **then** deploy.* |
+| **fun / funny** | *fun* = enjoyable; *funny* = makes you laugh | *The hackathon was **fun**. The meme was **funny**.* |
+
+## Exercises
+
+<Quiz
+  question="You want to say you work at a bank now. Which is correct?"
+  options={["Actually, I work at a bank.", "Currently, I work at a bank.", "Eventually, I work at a bank."]}
+  answer={1}
+  explanation="'Currently' means 'now'. 'Actually' means 'in fact', and 'eventually' means 'in the end'."
+/>
+
+<Quiz
+  question="'I ___ to learn Rust next year.' (it's my plan)"
+  options={["pretend", "intend", "attend"]}
+  answer={1}
+  explanation="'Intend' means 'plan to'. 'Pretend' means to fake something."
+/>
+
+<Quiz
+  question="'Can you ___ me some advice about the interview?'"
+  options={["borrow", "give", "advise"]}
+  answer={1}
+  explanation="You 'give' advice. You can also say 'Can you advise me…', but not 'advise me some advice'."
+/>
+
+<FixIt
+  sentence="I assisted the meeting yesterday."
+  answers={["I attended the meeting yesterday.", "I went to the meeting yesterday."]}
+  explanation="'Attend' means 'go to'. 'Assist' means 'help'."
+/>
+
+<FixIt
+  sentence="We will realize the deploy on Friday."
+  answers={["We will do the deploy on Friday.", "We will deploy on Friday.", "We'll deploy on Friday.", "We'll do the deploy on Friday.", "We will do the deployment on Friday."]}
+  explanation="'Realize' means 'understand'. For actions, use 'do', or the verb itself: deploy."
+/>
+
+<FixIt
+  sentence="The new feature was a big exit."
+  answers={["The new feature was a big success.", "The new feature was a great success."]}
+  explanation="'Exit' is a way out. The word you want is 'success'."
+/>
+
+## Today's task
+
+Look at the table and find **three false friends** that you have used incorrectly before. Write a correct sentence about your work with each one.

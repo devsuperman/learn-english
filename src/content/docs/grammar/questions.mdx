@@ -1,0 +1,89 @@
+---
+title: "Questions: do, does, did"
+description: Make correct questions with auxiliary verbs, for meetings and interviews.
+sidebar:
+  order: 1
+---
+
+import Quiz from '../../../components/Quiz.astro';
+import FixIt from '../../../components/FixIt.astro';
+
+## Explanation
+
+In many languages, you make a question just by changing your intonation: *"You use Docker?"* In English, most questions need a **helper verb** (an auxiliary) **before the subject**.
+
+| Main verb | Helper | Structure | Example |
+| --- | --- | --- | --- |
+| Present simple | **do / does** | do/does + subject + base verb | ***Do** you **use** Docker?* |
+| Past simple | **did** | did + subject + base verb | ***Did** you **deploy** it?* |
+| *be* | none | be + subject | ***Is** the build green?* |
+| Present perfect | **have / has** | have/has + subject + past participle | ***Have** you **tested** it?* |
+| Modals | **can, could, will, should** | modal + subject + base verb | ***Can** you **share** your screen?* |
+
+After **do / does / did**, the main verb is always in the **base form**: *Did you **fix** it?* (not *fixed*). *Does she **work** remotely?* (not *works*).
+
+### Wh- questions
+
+Put the question word first, then the same structure:
+
+- ***What** do you **do**?*
+- ***Where** did you **find** the bug?*
+- ***How long** have you **worked** with React?*
+- ***Why** is the pipeline **failing**?*
+
+## Key phrases
+
+- *Do you have any questions for us?*
+- *Did you have a chance to look at my PR?*
+- *How does the authentication work?*
+- *What did you change in the config?*
+- *Have you worked with microservices before?*
+
+## Common mistakes
+
+| ❌ Don't say | ✅ Say | Why |
+| --- | --- | --- |
+| You **use** Docker? | **Do** you **use** Docker? | Questions need *do/does/did*. |
+| **Does** he **works** remotely? | **Does** he **work** remotely? | After *does*, use the base verb. |
+| **Did** you **fixed** the bug? | **Did** you **fix** the bug? | After *did*, use the base verb. |
+| What **means** "SLA"? | What **does** "SLA" **mean**? | *Does* + base verb. |
+| **Do** you **are** ready? | **Are** you ready? | With *be*, don't use *do*. |
+| Why the test **is** failing? | Why **is** the test failing? | Helper verb **before** the subject. |
+
+## Exercises
+
+<Quiz
+  question="Which question is correct?"
+  options={["Did you deployed the hotfix?", "Did you deploy the hotfix?", "You deployed the hotfix did?"]}
+  answer={1}
+  explanation="After 'did', always use the base form of the verb: deploy."
+/>
+
+<Quiz
+  question="Choose the correct question."
+  options={["What means 'idempotent'?", "What does 'idempotent' mean?", "What does mean 'idempotent'?"]}
+  answer={1}
+  explanation="Structure: question word + does + subject + base verb."
+/>
+
+<FixIt
+  sentence="You have experience with AWS?"
+  answers={["Do you have experience with AWS?", "Do you have any experience with AWS?"]}
+  explanation="Yes/no questions in the present simple start with 'do' or 'does'."
+/>
+
+<FixIt
+  sentence="Why the build is failing?"
+  answers={["Why is the build failing?"]}
+  explanation="In a question, the helper verb (is) comes before the subject (the build)."
+/>
+
+<FixIt
+  sentence="Does the API returns JSON?"
+  answers={["Does the API return JSON?"]}
+  explanation="After 'does', the verb has no -s: return."
+/>
+
+## Today's task
+
+Write **five questions** you could ask in your next meeting or interview: two with *do/does*, one with *did*, one with *have*, and one with *could*.

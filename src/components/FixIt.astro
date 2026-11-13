@@ -1,0 +1,79 @@
+---
+/**
+ * "Fix the sentence" exercise. The learner types a corrected version,
+ * which is compared to the accepted answers (case and punctuation ignored).
+ *
+ * <FixIt
+ *   sentence="I have 5 years of experience with Java since 2019."
+ *   answers={["I have had 5 years of experience with Java", "I have been working with Java since 2019"]}
+ *   explanation="Use 'since' with a starting point and the present perfect."
+ * />
+ */
+interface Props {
+  sentence: string;
+  answers: string[];
+  explanation?: string;
+}
+const { sentence, answers, explanation } = Astro.props;
+---
+
+<fix-it class="exercise not-content" data-answers={JSON.stringify(answers)}>
+  <p class="exercise-label">Fix the sentence</p>
+  <p class="exercise-question"><s>{sentence}</s></p>
+  <form class="fixit-form">
+    <input
+      class="fixit-input"
+      type="text"
+      autocomplete="off"
+      spellcheck="false"
+      aria-label="Your corrected sentence"
+      placeholder="Type the corrected sentence…"
+    />
+    <button type="submit" class="exercise-button">Check</button>
+    <button type="button" class="exercise-button secondary fixit-reveal">Show answer</button>
+  </form>
+  <p class="exercise-feedback" aria-live="polite" hidden></p>
+  <div class="exercise-explanation" hidden>
+    <p><strong>Answer:</strong> {answers[0]}</p>
+    {answers.length > 1 && <p><strong>Also OK:</strong> {answers.slice(1).join(' / ')}</p>}
+    {explanation && <p>{explanation}</p>}
+  </div>
+</fix-it>
+
+<script>
+  const normalize = (s: string) =>
+    s
+      .toLowerCase()
+      .replace(/[’']/g, "'")
+      .replace(/[^a-z0-9' ]/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+
+  class FixIt extends HTMLElement {
+    connectedCallback() {
+      const answers: string[] = JSON.parse(this.dataset.answers ?? '[]');
+      const form = this.querySelector<HTMLFormElement>('.fixit-form')!;
+      const input = this.querySelector<HTMLInputElement>('.fixit-input')!;
+      const feedback = this.querySelector<HTMLElement>('.exercise-feedback')!;
+      const explanation = this.querySelector<HTMLElement>('.exercise-explanation')!;
+      const reveal = this.querySelector<HTMLButtonElement>('.fixit-reveal')!;
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        if (!input.value.trim()) return;
+        const correct = answers.some((a) => normalize(a) === normalize(input.value));
+        feedback.hidden = false;
+        feedback.dataset.state = correct ? 'correct' : 'wrong';
+        feedback.textContent = correct
+          ? 'Correct!'
+          : 'Not an exact match. Compare with the answer, as there may be more than one way to say it.';
+        explanation.hidden = !correct;
+        if (!correct) reveal.focus();
+      });
+      reveal.addEventListener('click', () => {
+        explanation.hidden = false;
+      });
+    }
+  }
+  customElements.define('fix-it', FixIt);
+</script>

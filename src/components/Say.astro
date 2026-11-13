@@ -1,0 +1,44 @@
+---
+/**
+ * Inline "listen" button that reads text aloud with the browser's
+ * built-in speech synthesis (en-US). Hidden when the browser has no support.
+ *
+ * <Say text="queue" />             → shows "queue 🔊"
+ * <Say text="cache" label="cash" /> → shows custom label
+ * <Say text="cache" label="" />     → button only (e.g. in a table column)
+ */
+interface Props {
+  text: string;
+  label?: string;
+}
+const { text, label } = Astro.props;
+---
+
+<say-it class="say" data-text={text}>
+  {label !== '' && <span class="say-text">{label ?? text}</span>}
+  <button type="button" class="say-button" aria-label={`Listen: ${text}`} title="Listen" hidden>
+    <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M11 5 6 9H2v6h4l5 4V5z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path><path d="M19 5a10 10 0 0 1 0 14"></path>
+    </svg>
+  </button>
+</say-it>
+
+<script>
+  class SayIt extends HTMLElement {
+    connectedCallback() {
+      const button = this.querySelector<HTMLButtonElement>('.say-button')!;
+      if (!('speechSynthesis' in window)) return;
+      button.hidden = false;
+      button.addEventListener('click', () => {
+        const utterance = new SpeechSynthesisUtterance(this.dataset.text ?? '');
+        utterance.lang = 'en-US';
+        utterance.rate = 0.9;
+        const voice = speechSynthesis.getVoices().find((v) => v.lang === 'en-US');
+        if (voice) utterance.voice = voice;
+        speechSynthesis.cancel();
+        speechSynthesis.speak(utterance);
+      });
+    }
+  }
+  customElements.define('say-it', SayIt);
+</script>

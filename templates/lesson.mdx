@@ -1,0 +1,44 @@
+---
+title: Lesson title
+description: One sentence describing what the learner will be able to do.
+sidebar:
+  order: 1
+---
+
+{/* Copy this file into src/content/docs/<module>/ and rename it. */}
+
+import Quiz from '../../../components/Quiz.astro';
+import FixIt from '../../../components/FixIt.astro';
+
+## Explanation
+
+Two or three short paragraphs. One idea per lesson.
+
+## Key phrases
+
+- *Sentence the learner can copy and adapt.*
+
+## Common mistakes
+
+| ❌ Don't say | ✅ Say | Why |
+| --- | --- | --- |
+| Wrong sentence | Correct sentence | Short reason |
+
+## Exercises
+
+<Quiz
+  question="Question?"
+  options={["Option A", "Option B", "Option C"]}
+  answer={1}
+  explanation="Why the answer is correct."
+/>
+
+<FixIt
+  sentence="Sentence with a mistake."
+  answers={["Main correct version.", "Another accepted version."]}
+  explanation="Why."
+/>
+
+## Today's task
+
+One small, real-world action (write, record or say something).
