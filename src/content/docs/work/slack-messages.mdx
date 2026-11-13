@@ -1,0 +1,51 @@
+---
+title: Slack messages and asking for help
+description: Write clear, polite async messages that get fast answers.
+sidebar:
+  order: 2
+---
+
+import Quiz from '../../../components/Quiz.astro';
+
+## Explanation
+
+Good async messages are **complete**: the reader can answer without asking you anything. Don't just send *"Hi"* and wait for a reply.
+
+### Template for asking for help
+
+1. **Context**: what you are doing.
+2. **Problem**: what happened, with the error message.
+3. **What you tried.**
+4. **Clear question.**
+
+> Hi Ana! I'm setting up the local environment for the billing service. When I run `make dev`, I get `connection refused` on port 5432. I've already restarted Docker and checked the `.env` file. Do you know if the database needs to be started separately?
+
+## Key phrases
+
+- *Quick question about …*
+- *Could you take a look at … when you have a moment?*
+- *Just a heads-up: …* (= information in advance)
+- *Following up on …* (= reminding someone politely)
+- *Thanks for the help! That fixed it.*
+- *No rush.* / *This is a bit urgent because …*
+
+## Common mistakes
+
+| ❌ Don't write | ✅ Write | Why |
+| --- | --- | --- |
+| Hi | *Hi! Quick question about X: …* | Put the question in the first message. |
+| **Please, can you** review? | **Could you** review **my PR, please**? | *Could you* sounds more polite. |
+| I **need that you** check it. | I **need you to** check it. | Correct structure: *need someone to do something*. |
+
+## Exercise
+
+<Quiz
+  question="Which message is best for asking a teammate for help?"
+  options={["Hi", "Hi, are you there?", "Hi! The deploy is failing with 'permission denied' on S3. I checked the IAM role. Do you know which policy it needs?"]}
+  answer={2}
+  explanation="It gives context, the error, what you tried, and a clear question, all in one message."
+/>
+
+## Today's task
+
+Rewrite a recent message you sent at work in English, using the 4-part template.

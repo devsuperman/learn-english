@@ -1,0 +1,70 @@
+---
+title: Make vs. do, and other common mistakes
+description: The most common word-choice mistakes in tech English, and how to fix them.
+sidebar:
+  order: 1
+---
+
+import Quiz from '../../../components/Quiz.astro';
+import FixIt from '../../../components/FixIt.astro';
+
+## Explanation
+
+Many languages use **one verb** where English uses two: **make** and **do**.
+
+- **Do** is for tasks, activities and work: *do a task, do an interview, do a code review, do your best*.
+- **Make** is for creating or producing something: *make a decision, make a mistake, make a change, make a plan*.
+
+When you are not sure, ask yourself: *Am I creating something new?* If yes, use **make**. If it is an activity, use **do**.
+
+## Key phrases
+
+| Do | Make |
+| --- | --- |
+| do an interview | make a decision |
+| do a code review | make a mistake |
+| do some research | make a change / a commit |
+| do a task / a ticket | make progress |
+| do a deployment | make a suggestion |
+
+## Common mistakes
+
+| ❌ Don't say | ✅ Say | Why |
+| --- | --- | --- |
+| I **made** an interview yesterday. | I **had / did** an interview yesterday. | An interview is an activity. |
+| I have experience **in** Python **since** 5 years. | I have **5 years of** experience with Python. | Use *X years of experience* with a duration. |
+| Can you **explain me** the bug? | Can you **explain** the bug **to me**? | *Explain* takes *to* before the person. |
+| I **actually** work at a bank. | I **currently** work at a bank. | *Actually* means "in fact", not "now". |
+| **Is** possible to deploy today? | **Is it** possible to deploy today? | English sentences need a subject. |
+
+## Exercises
+
+<Quiz
+  question="Choose the correct sentence."
+  options={["I made a code review this morning.", "I did a code review this morning.", "I realized a code review this morning."]}
+  answer={1}
+  explanation="A code review is an activity, so we use 'do'."
+/>
+
+<Quiz
+  question="You want to say you work at Google now. Which word fits? 'I ___ work at Google.'"
+  options={["actually", "currently", "eventually"]}
+  answer={1}
+  explanation="'Currently' means 'at the moment'. 'Actually' means 'in fact', and 'eventually' means 'in the end'."
+/>
+
+<FixIt
+  sentence="Can you explain me how the API works?"
+  answers={["Can you explain to me how the API works?", "Can you explain how the API works to me?", "Can you explain how the API works?"]}
+  explanation="'Explain' needs 'to' before the person, or you can leave the person out."
+/>
+
+<FixIt
+  sentence="Is important to write tests."
+  answers={["It is important to write tests.", "It's important to write tests."]}
+  explanation="In English, every sentence needs a subject. Use 'it' as a dummy subject."
+/>
+
+## Today's task
+
+Write **three sentences** about your work today: one with **do**, one with **make**, and one with **currently**. Read them out loud.

@@ -1,0 +1,17 @@
+{
+  "name": "learn-english",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "description": "English crash course for tech jobs: learn, practice, ace interviews and work in English.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.42.11",
+    "astro": "^7.4.11"
+  }
+}

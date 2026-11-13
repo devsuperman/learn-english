@@ -1,0 +1,32 @@
+---
+title: English for Tech
+description: A crash course to learn, practice, ace job interviews and work in English in the tech industry.
+template: splash
+hero:
+  tagline: A crash course for developers, designers, QA, data and product people who want to get hired and work in English.
+  actions:
+    - text: Start the course
+      link: start-here/how-it-works/
+      icon: right-arrow
+    - text: Jump to interviews
+      link: interviews/
+      icon: right-arrow
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+  <Card title="1. Foundations" icon="open-book">
+    The grammar and vocabulary that matter most at work, and the mistakes that most learners make.
+  </Card>
+  <Card title="2. Daily practice" icon="rocket">
+    15-minute routines for speaking, listening and writing every day.
+  </Card>
+  <Card title="3. Job interviews" icon="star">
+    Tell me about yourself, STAR answers, technical talk, salary and questions to ask.
+  </Card>
+  <Card title="4. Working in English" icon="laptop">
+    Standups, Slack, emails, code reviews, meetings and feedback.
+  </Card>
+</CardGrid>
