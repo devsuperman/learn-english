@@ -1,0 +1,108 @@
+---
+title: Pronunciation of tech words
+description: How to say the tech words you read every day, with listen buttons.
+sidebar:
+  order: 4
+---
+
+import Quiz from '../../../components/Quiz.astro';
+import Say from '../../../components/Say.astro';
+
+## Explanation
+
+Many people **read** tech words every day but rarely **say** them. Then, in an interview, they pronounce *cache* or *queue* in a way the interviewer doesn't understand.
+
+Click the 🔊 buttons to hear each word. The sound comes from your browser's built-in voice, so it may vary a little between devices. The **"sounds like"** column uses simple English spelling, and **capital letters** show the stressed syllable.
+
+## Words that are often mispronounced
+
+| Word | Sounds like | Listen |
+| --- | --- | --- |
+| cache | "cash" (not "ca-shay") | <Say text="cache" label="" /> |
+| queue | "kyoo" (like the letter Q) | <Say text="queue" label="" /> |
+| suite | "sweet" | <Say text="suite" label="" /> |
+| Linux | "LIN-ucks" | <Say text="Linux" label="" /> |
+| GUI | "GOO-ee" | <Say text="gooey" label="" /> |
+| SQL | "S-Q-L" or "SEE-quel" (both OK) | <Say text="sequel" label="" /> |
+| JSON | "JAY-son" | <Say text="Jason" label="" /> |
+| YAML | "YAM-ul" | <Say text="yamel" label="" /> |
+| nginx | "engine-X" | <Say text="engine X" label="" /> |
+| Kubernetes | "koo-ber-NET-eez" | <Say text="Kubernetes" label="" /> |
+| Azure | "AZH-er" | <Say text="Azure" label="" /> |
+| sudo | "SOO-doo" | <Say text="sue doo" label="" /> |
+| null | "nul" (rhymes with "dull") | <Say text="null" label="" /> |
+| char | "car" or "char" (both OK) | <Say text="char" label="" /> |
+| data | "DAY-ta" or "DA-ta" (both OK) | <Say text="data" label="" /> |
+| width / height | "width" / "hite" | <Say text="width, height" label="" /> |
+| async | "AY-sink" | <Say text="ay sink" label="" /> |
+
+## Word stress
+
+In English, **one syllable is stronger** than the others. Wrong stress makes words hard to recognize, even when the sounds are correct.
+
+| Word | Stress | Listen |
+| --- | --- | --- |
+| develop / developer | de-**VEL**-op / de-**VEL**-op-er | <Say text="develop, developer" label="" /> |
+| component | com-**PO**-nent | <Say text="component" label="" /> |
+| architecture | **AR**-chi-tec-ture | <Say text="architecture" label="" /> |
+| algorithm | **AL**-go-rithm | <Say text="algorithm" label="" /> |
+| analysis / analyze | a-**NAL**-y-sis / **AN**-a-lyze | <Say text="analysis, analyze" label="" /> |
+| deploy | de-**PLOY** | <Say text="deploy" label="" /> |
+| technology | tech-**NOL**-o-gy | <Say text="technology" label="" /> |
+| a **RE**cord / to re**CORD** | noun: first syllable / verb: second syllable | <Say text="a record, to record" label="" /> |
+
+## The -ed ending
+
+The past tense **-ed** has three sounds. Most learners say "-ed" as an extra syllable every time. That's usually **wrong**.
+
+| Sound | When | Examples | Listen |
+| --- | --- | --- | --- |
+| /t/ | after p, k, s, sh, ch, f | fixed, pushed, checked → "fixt", "pusht" | <Say text="fixed, pushed, checked" label="" /> |
+| /d/ | after voiced sounds and vowels | deployed, merged, called → "deployd" | <Say text="deployed, merged, called" label="" /> |
+| /ɪd/ (extra syllable) | **only** after t or d | tested, updated, added → "TEST-id" | <Say text="tested, updated, added" label="" /> |
+
+## Silent letters
+
+| Word | Silent letter | Listen |
+| --- | --- | --- |
+| design / sign | g | <Say text="design, sign" label="" /> |
+| debt | b | <Say text="debt" label="" /> |
+| receipt | p | <Say text="receipt" label="" /> |
+| Wednesday | first d | <Say text="Wednesday" label="" /> |
+| foreign | g | <Say text="foreign" label="" /> |
+| knowledge | k | <Say text="knowledge" label="" /> |
+
+## Exercises
+
+<Quiz
+  question="How do you pronounce 'cache'?"
+  options={["Like 'catch'", "Like 'cash'", "Like 'ca-shay'"]}
+  answer={1}
+  explanation="'Cache' sounds exactly like 'cash'."
+/>
+
+<Quiz
+  question="How many syllables does 'fixed' have?"
+  options={["One: 'fixt'", "Two: 'fix-ed'"]}
+  answer={0}
+  explanation="After the sound /s/ (the x in 'fix' ends in /s/), -ed sounds like /t/. No extra syllable."
+/>
+
+<Quiz
+  question="Where is the stress in 'developer'?"
+  options={["DE-vel-op-er", "de-VEL-op-er", "de-vel-op-ER"]}
+  answer={1}
+  explanation="The stress is on the second syllable: de-VEL-op-er."
+/>
+
+<Quiz
+  question="Which -ed ending adds an extra syllable?"
+  options={["deployed", "pushed", "updated"]}
+  answer={2}
+  explanation="Only verbs ending in t or d add a syllable: up-DAT-ed."
+/>
+
+## Today's task
+
+1. Click through each table and **repeat every word** after the voice.
+2. Record yourself saying: *"I fixed the cache, updated the queue and deployed the component."* Compare it with the listen buttons.

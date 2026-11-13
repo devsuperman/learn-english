@@ -14,6 +14,6 @@ For tenses, questions, articles and prepositions, see the [Grammar module](../gr
 ## Lessons
 
 1. [Make vs. do, and other common mistakes](./make-vs-do/)
-2. False friends in tech *(coming soon)*
-3. Phrasal verbs at work: set up, roll back, figure out *(coming soon)*
-4. Pronunciation of tech words *(coming soon)*
+2. [False friends and confusing words](./false-friends/)
+3. [Phrasal verbs at work](./phrasal-verbs/): set up, roll back, figure out…
+4. [Pronunciation of tech words](./pronunciation/), with listen buttons

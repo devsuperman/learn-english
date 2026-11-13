@@ -7,7 +7,7 @@ A free crash course to **learn, practice, do job interviews, and work in English
 ## Modules
 
 1. **Grammar**: questions, tenses, articles, prepositions, polite modals, comparatives, conditionals, passive voice
-2. **Vocabulary & pronunciation**: common mistakes, false friends, phrasal verbs
+2. **Vocabulary & pronunciation**: common mistakes, false friends, phrasal verbs, pronunciation with listen buttons
 3. **Daily practice**: 15-minute routines
 4. **Job interviews**: Tell me about yourself, STAR, questions to ask
 5. **Working in English**: standups, Slack, code reviews, meetings
@@ -25,7 +25,7 @@ npm run build    # outputs to dist/
 ```
 
 Lessons live in `src/content/docs/<module>/`. To add one, copy `templates/lesson.mdx`.
-Interactive exercises are in `src/components/` (`Quiz.astro`, `FixIt.astro`).
+Interactive components are in `src/components/`: `Quiz.astro`, `FixIt.astro`, and `Say.astro` (a listen button that uses the browser's text-to-speech).
 
 ## Deployment
 

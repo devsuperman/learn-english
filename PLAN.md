@@ -28,20 +28,19 @@ Every lesson follows `templates/lesson.mdx`: **Explanation → Key phrases → C
 
 ### Phase 1: MVP
 - [x] Site scaffold (Astro + Starlight), GitHub Pages workflow
-- [x] Interactive components: `Quiz`, `FixIt`
+- [x] Interactive components: `Quiz`, `FixIt`, `Say` (text-to-speech)
 - [x] Lesson template
 - [x] First lessons in each module + phrasebank + interview question bank
 - [ ] Interviews: thinking out loud in technical interviews
 - [ ] Interviews: salary and visa conversations
 - [x] Grammar: 10 lessons (questions, present tenses, past vs. present perfect, future, articles, prepositions, polite modals, comparatives, conditionals, passive voice)
-- [ ] Vocabulary: false friends, phrasal verbs, pronunciation
+- [x] Vocabulary: false friends, phrasal verbs, pronunciation (with text-to-speech listen buttons)
 - [ ] Work: code review comments, meetings, feedback, emails
 - [ ] Test with 3–5 real learners and collect feedback
 
 ### Phase 2: More interaction
 - [ ] Flashcards for key phrases (spaced repetition, saved in the browser)
 - [ ] Progress tracking per lesson
-- [ ] Audio for pronunciation (text-to-speech)
 - [ ] Printable cheat sheets
 
 ### Phase 3: AI practice

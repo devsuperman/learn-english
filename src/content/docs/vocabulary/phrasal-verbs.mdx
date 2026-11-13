@@ -1,0 +1,110 @@
+---
+title: Phrasal verbs at work
+description: The phrasal verbs native speakers use every day in tech teams.
+sidebar:
+  order: 3
+---
+
+import Quiz from '../../../components/Quiz.astro';
+import FixIt from '../../../components/FixIt.astro';
+
+## Explanation
+
+A **phrasal verb** is a verb + a small word (*up, out, back, into, on*…) with a new meaning: *set* + *up* = **configure**. Native speakers use them **all the time**, especially in speech and on Slack. If you only use formal verbs (*configure, investigate, postpone*), you'll be understood, but you'll sound stiff, and you may not understand your colleagues.
+
+### Separable or not?
+
+Many phrasal verbs can be split by the object. With a **pronoun** (*it, them, this*), you **must** split them:
+
+- ✅ *Set up **the server**.* ✅ *Set **the server** up.* ✅ *Set **it** up.*
+- ❌ *Set up **it**.*
+
+Some can't be split: *look **into** it*, *run **into** a problem*.
+
+## The essential list
+
+### Projects and tasks
+
+| Phrasal verb | Meaning | Example |
+| --- | --- | --- |
+| **set up** | configure, create | *Can you **set up** the CI pipeline?* |
+| **figure out** | understand, find the solution | *I'm trying to **figure out** why it's slow.* |
+| **look into** | investigate | *I'll **look into** the bug after lunch.* |
+| **come up with** | create an idea | *We **came up with** a simpler design.* |
+| **pick up** | start working on a task | *I'll **pick up** the next ticket.* |
+| **wrap up** | finish | *Let's **wrap up** the meeting.* |
+| **carry on** | continue | ***Carry on**, I'll join later.* |
+| **hand over** | transfer responsibility | *I'll **hand over** the project before my vacation.* |
+
+### Systems and deployments
+
+| Phrasal verb | Meaning | Example |
+| --- | --- | --- |
+| **roll out** | release gradually | *We're **rolling out** the feature to 10% of users.* |
+| **roll back** | return to the previous version | *The deploy failed, so we **rolled** it **back**.* |
+| **spin up** | start (a server, an environment) | *Let's **spin up** a test environment.* |
+| **shut down** | turn off | *We'll **shut down** the old service next month.* |
+| **break down** | stop working / divide into parts | *The pipeline **broke down**. / Let's **break down** this epic.* |
+| **back up** | make a copy | *Did you **back up** the database?* |
+| **log in / log out** | enter / leave a system | *I can't **log in** to the VPN.* |
+
+### Communication
+
+| Phrasal verb | Meaning | Example |
+| --- | --- | --- |
+| **follow up** | continue a conversation later | *I'll **follow up** by email.* |
+| **reach out** | contact | *Feel free to **reach out** if you have questions.* |
+| **catch up** | talk to get updated | *Let's **catch up** tomorrow.* |
+| **point out** | mention, show | *Thanks for **pointing out** that bug.* |
+| **push back** | disagree / delay | *I'd **push back** on that estimate. / We **pushed back** the release.* |
+| **run into** | encounter (a problem) | *I **ran into** an issue with the API.* |
+| **bring up** | mention a topic | *Can I **bring up** something about the sprint?* |
+| **sign off** | approve formally | *The PM **signed off** on the design.* |
+
+## Common mistakes
+
+| ❌ Don't say | ✅ Say | Why |
+| --- | --- | --- |
+| Can you set up **it**? | Can you set **it** up? | Pronouns go in the middle. |
+| I'll look **it into**. | I'll look **into it**. | *Look into* can't be split. |
+| I **runned into** a problem. | I **ran into** a problem. | *Run* is irregular: run → ran. |
+| Let's **make a catch up**. | Let's **catch up**. | It's a verb, not a noun, here. |
+
+## Exercises
+
+<Quiz
+  question="The new version has a critical bug. What do you do?"
+  options={["Roll it out", "Roll it back", "Set it up"]}
+  answer={1}
+  explanation="'Roll back' means return to the previous version."
+/>
+
+<Quiz
+  question="'Feel free to ___ if you need anything.'"
+  options={["reach out", "point out", "shut down"]}
+  answer={0}
+  explanation="'Reach out' means 'contact me'. It's very common at the end of emails."
+/>
+
+<Quiz
+  question="'I'm still trying to ___ why the tests fail only on CI.'"
+  options={["figure out", "wrap up", "hand over"]}
+  answer={0}
+  explanation="'Figure out' means 'understand' or 'find the answer'."
+/>
+
+<FixIt
+  sentence="The database is slow. I will look it into."
+  answers={["The database is slow. I will look into it.", "The database is slow. I'll look into it."]}
+  explanation="'Look into' can't be separated. The pronoun goes after it: look into it."
+/>
+
+<FixIt
+  sentence="Did you back up it before the migration?"
+  answers={["Did you back it up before the migration?"]}
+  explanation="With a pronoun, separate the phrasal verb: back it up."
+/>
+
+## Today's task
+
+Choose **five** phrasal verbs from the lists. Use them in a fake standup update or Slack message about your work.
