@@ -67,6 +67,7 @@ Pick up from here. Work top to bottom; each content task follows `templates/less
 - [x] Interactive components: `Quiz`, `FixIt`, `Say` (text-to-speech)
 - [x] Lesson template, `CLAUDE.md`, `npm run verify` end-to-end check
 - [x] Grammar: all 10 lessons
+- [x] Grammar: extra practice pages for questions (do, does, did, mixed)
 - [x] Vocabulary & pronunciation: all 4 lessons
 - [x] Job interviews: all 6 lessons
 - [x] Daily practice: 15-minute daily routine

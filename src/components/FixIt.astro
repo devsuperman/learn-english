@@ -8,26 +8,33 @@
  *   answers={["I have had 5 years of experience with Java", "I have been working with Java since 2019"]}
  *   explanation="Use 'since' with a starting point and the present perfect."
  * />
+ *
+ * For other free-text tasks (e.g. "turn this statement into a question"),
+ * pass a `label` and `strike={false}` so the prompt isn't crossed out:
+ *
+ * <FixIt label="Make a question" strike={false} sentence="You use Git." answers={["Do you use Git?"]} />
  */
 interface Props {
   sentence: string;
   answers: string[];
   explanation?: string;
+  label?: string;
+  strike?: boolean;
 }
-const { sentence, answers, explanation } = Astro.props;
+const { sentence, answers, explanation, label = 'Fix the sentence', strike = true } = Astro.props;
 ---
 
 <fix-it class="exercise not-content" data-answers={JSON.stringify(answers)}>
-  <p class="exercise-label">Fix the sentence</p>
-  <p class="exercise-question"><s>{sentence}</s></p>
+  <p class="exercise-label">{label}</p>
+  <p class="exercise-question">{strike ? <s>{sentence}</s> : sentence}</p>
   <form class="fixit-form">
     <input
       class="fixit-input"
       type="text"
       autocomplete="off"
       spellcheck="false"
-      aria-label="Your corrected sentence"
-      placeholder="Type the corrected sentence…"
+      aria-label={strike ? 'Your corrected sentence' : 'Your answer'}
+      placeholder={strike ? 'Type the corrected sentence…' : 'Type your answer…'}
     />
     <button type="submit" class="exercise-button">Check</button>
     <button type="button" class="exercise-button secondary fixit-reveal">Show answer</button>

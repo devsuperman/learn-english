@@ -1,0 +1,199 @@
+---
+title: "Practice: did"
+description: Extra practice for questions with "did" in the past simple.
+sidebar:
+  order: 1.3
+---
+
+import Quiz from '../../../components/Quiz.astro';
+import FixIt from '../../../components/FixIt.astro';
+
+:::note[Practice 3 of 4]
+This page gives you extra practice for the lesson [Questions: do, does, did](../questions/). Here you practice **only *did***. Before this page: [do](../questions-do/) and [does](../questions-does/). Next: [all three together](../questions-mixed/).
+:::
+
+## Explanation
+
+Use **did** to make questions in the **past simple**: about finished actions, like yesterday's work, the last sprint or an incident. *Did* is the same for **every subject**: *I, you, he, she, it, we, they*.
+
+The past tense **moves to *did***. The main verb goes back to the **base form**. This is true for regular verbs and for **irregular verbs**:
+
+| Statement | Question |
+| --- | --- |
+| You **fixed** the bug. | **Did** you **fix** the bug? |
+| The deploy **went** well. | **Did** the deploy **go** well? |
+| She **wrote** the tests. | **Did** she **write** the tests? |
+| It **broke** production. | **Did** it **break** production? |
+| They **found** the cause. | **Did** they **find** the cause? |
+
+**Clue words** for *did*: *yesterday, last night, last sprint, this morning, two hours ago, in 2023*.
+
+**Short answers:** *Yes, I did.* / *No, it didn't.*
+
+:::caution[When you don't need did]
+With **was / were**, don't use *did*: *"**Was** the build green?"*, *"**Were** you in the meeting?"*
+:::
+
+## Key phrases
+
+- *Did you have a chance to look at my PR?*
+- *Did the deploy go well?*
+- *What did you work on yesterday?*
+- *When did the incident start?*
+- *Did anyone change the config?*
+- *How did you find the bug?*
+- *Why did the job fail?*
+
+## Common mistakes
+
+| ❌ Don't say | ✅ Say | Why |
+| --- | --- | --- |
+| Did you **fixed** the bug? | Did you **fix** the bug? | After *did*, use the base verb. |
+| Did it **broke** prod? | Did it **break** prod? | Irregular verbs too: base form after *did*. |
+| Did you **went** to the meetup? | Did you **go** to the meetup? | *went* → *go* after *did*. |
+| You **finished** the ticket? | **Did** you **finish** the ticket? | A past question needs *did*. |
+| What you **did** yesterday? | What **did** you **do** yesterday? | Question word + *did* + subject + base verb. |
+| **Did** the build **was** green? | **Was** the build green? | With *was / were*, don't use *did*. |
+| **Does** he call you yesterday? | **Did** he call you yesterday? | *Yesterday* is past, so use *did*. |
+
+## Exercises
+
+### Part A: Choose the correct question
+
+<Quiz
+  question="Which question is correct?"
+  options={["Did you merged the PR?", "Did you merge the PR?", "Do you merged the PR?"]}
+  answer={1}
+  explanation="Did + subject + base verb: Did you merge…?"
+/>
+
+<Quiz
+  question="Complete: ___ the migration finish last night?"
+  options={["Does", "Did", "Was"]}
+  answer={1}
+  explanation="'Last night' is past, and 'finish' is a normal verb, so use 'did'."
+/>
+
+<Quiz
+  question="Choose the correct question."
+  options={["What did you work on yesterday?", "What you worked on yesterday?", "What did you worked on yesterday?"]}
+  answer={0}
+  explanation="What + did + you + base verb (work, not worked)."
+/>
+
+<Quiz
+  question="Which question is correct?"
+  options={["Did the server went down?", "Did the server go down?", "Did the server gone down?"]}
+  answer={1}
+  explanation="'Go' is irregular (go, went, gone), but after 'did' you always use the base form: go."
+/>
+
+<Quiz
+  question="Which question does NOT need 'did'?"
+  options={["___ you at the retro yesterday?", "___ you join the retro yesterday?", "___ you say something at the retro?"]}
+  answer={0}
+  explanation="'At the retro' needs 'be': Were you at the retro yesterday? The other two are 'Did you join…?' and 'Did you say…?'"
+/>
+
+<Quiz
+  question="Complete: When ___ you start at this company?"
+  options={["do", "did", "are"]}
+  answer={1}
+  explanation="You started in the past (a finished moment), so use 'did'."
+/>
+
+### Part B: Make a question
+
+Turn each sentence into a question with *did*. When you see a question word in parentheses, start with it.
+
+<FixIt
+  label="Make a question"
+  strike={false}
+  sentence="You fixed the login bug."
+  answers={["Did you fix the login bug?"]}
+  explanation="fixed → did … fix."
+/>
+
+<FixIt
+  label="Make a question"
+  strike={false}
+  sentence="The deploy went well."
+  answers={["Did the deploy go well?"]}
+  explanation="went → did … go."
+/>
+
+<FixIt
+  label="Make a question"
+  strike={false}
+  sentence="She wrote the tests."
+  answers={["Did she write the tests?"]}
+  explanation="wrote → did … write."
+/>
+
+<FixIt
+  label="Make a question"
+  strike={false}
+  sentence="They found the root cause."
+  answers={["Did they find the root cause?"]}
+  explanation="found → did … find."
+/>
+
+<FixIt
+  label="Make a question"
+  strike={false}
+  sentence="(When?) The incident started at 3 a.m."
+  answers={["When did the incident start?"]}
+/>
+
+<FixIt
+  label="Make a question"
+  strike={false}
+  sentence="(Why?) The job failed."
+  answers={["Why did the job fail?"]}
+/>
+
+<FixIt
+  label="Make a question"
+  strike={false}
+  sentence="(What?) You changed something in the config."
+  answers={["What did you change in the config?", "What did you change?"]}
+  explanation="'What' replaces 'something': What + did + you + change…?"
+/>
+
+### Part C: Fix the sentence
+
+<FixIt
+  sentence="Did you saw my message?"
+  answers={["Did you see my message?"]}
+  explanation="After 'did', use the base verb: see (not saw)."
+/>
+
+<FixIt
+  sentence="What you did last sprint?"
+  answers={["What did you do last sprint?", "What did you do in the last sprint?"]}
+  explanation="What + did + you + do. Here 'do' is the main verb."
+/>
+
+<FixIt
+  sentence="Did the tests passed?"
+  answers={["Did the tests pass?"]}
+  explanation="After 'did', use the base verb: pass."
+/>
+
+<FixIt
+  sentence="Does she deploy the hotfix yesterday?"
+  answers={["Did she deploy the hotfix yesterday?"]}
+  explanation="'Yesterday' is past, so use 'did'."
+/>
+
+<FixIt
+  sentence="Did the build was red?"
+  answers={["Was the build red?"]}
+  explanation="'Red' goes with 'be'. With 'was', don't use 'did'."
+/>
+
+## Today's task
+
+Imagine that **you lead tomorrow's standup**. **Write five questions with *did*** about yesterday's work: *"Did you finish the migration?"*, *"What did you work on yesterday?"*, *"Did anything block you?"*
+
+Use at least **two irregular verbs** (*go, find, write, break, have…*). Then say the questions out loud.

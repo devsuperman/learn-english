@@ -1,0 +1,204 @@
+---
+title: "Practice: does"
+description: Extra practice for questions with "does" (he, she, it) in the present simple.
+sidebar:
+  order: 1.2
+---
+
+import Quiz from '../../../components/Quiz.astro';
+import FixIt from '../../../components/FixIt.astro';
+
+:::note[Practice 2 of 4]
+This page gives you extra practice for the lesson [Questions: do, does, did](../questions/). Here you practice **only *does***. Before this page: [do](../questions-do/). Next: [did](../questions-did/), and [all three together](../questions-mixed/).
+:::
+
+## Explanation
+
+Use **does** to make questions in the **present simple** when the subject is:
+
+- **he, she, it**
+- a **singular noun**: *the app, the API, your manager, this endpoint*
+- a **team or company**: *your team, the company*. In American English, these words are singular.
+- **everyone, anyone, someone**: these words are singular too.
+
+The *-s* of the verb **moves to *does***. The main verb loses its *-s*:
+
+| Statement | Question |
+| --- | --- |
+| She **works** remotely. | **Does** she **work** remotely? |
+| The API **returns** JSON. | **Does** the API **return** JSON? |
+| The app **has** dark mode. | **Does** the app **have** dark mode? |
+| The job **runs** at night. | **Does** the job **run** at night? |
+
+*Does* is very common when you talk about **how systems work**:
+
+- ***How does** the cache **work**?*
+- ***What does** this error **mean**?*
+
+**Short answers:** *Yes, it does.* / *No, she doesn't.*
+
+:::caution[When you don't need does]
+With **be** (*is*) and with **modals** (*can, will, should*), don't use *does*: *"**Is** the server running?"*, *"**Can** it handle 1,000 requests per second?"*
+:::
+
+## Key phrases
+
+- *Does that make sense?*
+- *Does anyone have any questions?*
+- *How does the cache work?*
+- *What does "LGTM" mean?*
+- *Does the API support pagination?*
+- *Does your team use Scrum?*
+- *Which service does the login page call?*
+
+## Common mistakes
+
+| ❌ Don't say | ✅ Say | Why |
+| --- | --- | --- |
+| Does he **works** remotely? | Does he **work** remotely? | After *does*, the verb has no *-s*. |
+| Does the app **has** dark mode? | Does the app **have** dark mode? | After *does*, *has* becomes *have*. |
+| What **means** "SLA"? | What **does** "SLA" **mean**? | Question word + *does* + subject + base verb. |
+| **Do** the API return JSON? | **Does** the API return JSON? | *The API* = *it*, so use *does*. |
+| How **works** the login? | How **does** the login **work**? | Use *does*, then put the verb after the subject. |
+| **Does** she **is** your manager? | **Is** she your manager? | With *be*, don't use *does*. |
+
+## Exercises
+
+### Part A: Choose the correct question
+
+<Quiz
+  question="Which question is correct?"
+  options={["Does the build takes long?", "Does the build take long?", "Do the build take long?"]}
+  answer={1}
+  explanation="'The build' = it, so use 'does'. After 'does', use the base verb: take."
+/>
+
+<Quiz
+  question="Complete: ___ your manager work in your time zone?"
+  options={["Do", "Does", "Is"]}
+  answer={1}
+  explanation="'Your manager' = he or she, so use 'does'."
+/>
+
+<Quiz
+  question="Choose the correct question."
+  options={["What does 'deprecated' mean?", "What means 'deprecated'?", "What does 'deprecated' means?"]}
+  answer={0}
+  explanation="What + does + subject + base verb (mean, not means)."
+/>
+
+<Quiz
+  question="Complete: ___ everyone have access to the repo?"
+  options={["Do", "Does", "Are"]}
+  answer={1}
+  explanation="'Everyone' is singular in English, so use 'does': Does everyone have access…?"
+/>
+
+<Quiz
+  question="Which question does NOT need 'does'?"
+  options={["___ the server running?", "___ the server restart automatically?", "___ this script need Node 20?"]}
+  answer={0}
+  explanation="'Running' here is present continuous, so use 'be': Is the server running? The other two are 'Does the server restart…?' and 'Does this script need…?'"
+/>
+
+<Quiz
+  question="Complete: How ___ the payment service talk to the bank?"
+  options={["do", "does", "is"]}
+  answer={1}
+  explanation="'The payment service' = it, so use 'does'."
+/>
+
+### Part B: Make a question
+
+Turn each sentence into a question with *does*. When you see a question word in parentheses, start with it.
+
+<FixIt
+  label="Make a question"
+  strike={false}
+  sentence="She works on the mobile team."
+  answers={["Does she work on the mobile team?"]}
+  explanation="The -s moves to 'does': works → does … work."
+/>
+
+<FixIt
+  label="Make a question"
+  strike={false}
+  sentence="The API supports pagination."
+  answers={["Does the API support pagination?"]}
+/>
+
+<FixIt
+  label="Make a question"
+  strike={false}
+  sentence="This endpoint has rate limits."
+  answers={["Does this endpoint have rate limits?", "Does this endpoint have any rate limits?"]}
+  explanation="After 'does', 'has' becomes 'have'."
+/>
+
+<FixIt
+  label="Make a question"
+  strike={false}
+  sentence="Your team uses feature flags."
+  answers={["Does your team use feature flags?"]}
+  explanation="'Your team' is singular, so use 'does'."
+/>
+
+<FixIt
+  label="Make a question"
+  strike={false}
+  sentence="(How?) The cache works."
+  answers={["How does the cache work?"]}
+/>
+
+<FixIt
+  label="Make a question"
+  strike={false}
+  sentence="(What?) LGTM means 'looks good to me'."
+  answers={["What does LGTM mean?", "What does 'LGTM' mean?"]}
+  explanation="What + does + subject + base verb: What does LGTM mean?"
+/>
+
+<FixIt
+  label="Make a question"
+  strike={false}
+  sentence="(When?) The backup job runs every night."
+  answers={["When does the backup job run?", "When does the backup job run every night?"]}
+/>
+
+### Part C: Fix the sentence
+
+<FixIt
+  sentence="Does he knows about the outage?"
+  answers={["Does he know about the outage?"]}
+  explanation="After 'does', use the base verb: know."
+/>
+
+<FixIt
+  sentence="Do the pipeline run on main?"
+  answers={["Does the pipeline run on main?"]}
+  explanation="'The pipeline' = it, so use 'does'."
+/>
+
+<FixIt
+  sentence="How works the deploy script?"
+  answers={["How does the deploy script work?"]}
+  explanation="How + does + subject + base verb."
+/>
+
+<FixIt
+  sentence="Does the service has logs?"
+  answers={["Does the service have logs?", "Does the service have any logs?"]}
+  explanation="After 'does', 'has' becomes 'have'."
+/>
+
+<FixIt
+  sentence="What does mean this error?"
+  answers={["What does this error mean?"]}
+  explanation="The subject (this error) comes between 'does' and the verb."
+/>
+
+## Today's task
+
+Choose **one tool or service** you use at work, for example your CI, your database or an internal API. **Write five questions with *does*** about it: *"How does it handle errors?"*, *"Does it support retries?"*
+
+Then, the next time you explain something to a teammate, finish with ***"Does that make sense?"***

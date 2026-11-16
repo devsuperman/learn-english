@@ -1,0 +1,289 @@
+---
+title: "Practice: do, does or did?"
+description: Mixed practice to choose between do, does and did in questions.
+sidebar:
+  order: 1.4
+---
+
+import Quiz from '../../../components/Quiz.astro';
+import FixIt from '../../../components/FixIt.astro';
+
+:::note[Practice 4 of 4]
+This page mixes everything from the lesson [Questions: do, does, did](../questions/) and the practice pages for [do](../questions-do/), [does](../questions-does/) and [did](../questions-did/). Here you learn **when to use each one**.
+:::
+
+## Explanation
+
+Ask yourself these questions, in this order:
+
+1. **Is the main verb *be* (*am, is, are, was, were*), a modal (*can, could, will, should*), or *have* + past participle?**
+   Then you **don't use** *do/does/did*: *"**Is** it ready?"*, *"**Can** you help?"*, *"**Have** you tested it?"*
+2. **Is it about the past?** → **did** (for every subject)
+3. **Is it about the present, with *he, she, it* or a singular noun?** → **does**
+4. **Is it about the present, with *I, you, we, they* or a plural noun?** → **do**
+
+| | I, you, we, they, plural nouns | he, she, it, singular nouns |
+| --- | --- | --- |
+| **Present** (habits, facts) | **do** | **does** |
+| **Past** (finished actions) | **did** | **did** |
+
+After all three helpers, the main verb is in the **base form**: *do you **work**, does she **work**, did they **work***.
+
+**Clue words:**
+- *every day, usually, often, always, in general* → **do / does**
+- *yesterday, last week, this morning, ago, in 2022* → **did**
+
+**Here's the same question in three ways:**
+
+- ***Do** you **deploy** on Fridays?* means "Is it your habit?" (subject: *you*).
+- ***Does** the team **deploy** on Fridays?* means "Is it the team's habit?" (*the team* = *it*).
+- ***Did** you **deploy** on Friday?* means "Last Friday, one time in the past."
+
+## Key phrases
+
+- *Do you have any questions for us?*
+- *How does the team handle on-call?*
+- *Did you have a chance to look at my PR?*
+- *What do you like most about this job?*
+- *Does that make sense?*
+- *Why did the build fail?*
+
+## Common mistakes
+
+| ❌ Don't say | ✅ Say | Why |
+| --- | --- | --- |
+| **Does** you have a minute? | **Do** you have a minute? | *You* → *do*. |
+| **Do** the app support SSO? | **Does** the app support SSO? | *The app* = *it* → *does*. |
+| **Do** you finish it yesterday? | **Did** you finish it yesterday? | *Yesterday* → *did*. |
+| Does she **works** / Did you **worked** | Does she **work** / Did you **work** | Base verb after all three. |
+| **Did** the release **was** on time? | **Was** the release on time? | With *be*, no helper. |
+| How long **does** the tests take? | How long **do** the tests take? | *The tests* is plural → *do*. |
+
+## Exercises
+
+### Part A: Do, does or did?
+
+<Quiz
+  question="___ you use Kubernetes at work?"
+  options={["Do", "Does", "Did", "Are"]}
+  answer={0}
+  explanation="Present habit, subject 'you' → Do."
+/>
+
+<Quiz
+  question="___ the API return errors in JSON?"
+  options={["Do", "Does", "Did", "Is"]}
+  answer={1}
+  explanation="A general fact, subject 'the API' (= it) → Does."
+/>
+
+<Quiz
+  question="___ you talk to the client yesterday?"
+  options={["Do", "Does", "Did", "Were"]}
+  answer={2}
+  explanation="'Yesterday' is past, and 'talk' is a normal verb → Did."
+/>
+
+<Quiz
+  question="___ the tests passing now?"
+  options={["Do", "Does", "Did", "Are"]}
+  answer={3}
+  explanation="'Passing now' is present continuous, which uses 'be' → Are the tests passing now?"
+/>
+
+<Quiz
+  question="What ___ your company do?"
+  options={["do", "does", "did", "is"]}
+  answer={1}
+  explanation="A general fact, subject 'your company' (= it) → What does your company do?"
+/>
+
+<Quiz
+  question="When ___ the outage start? (The outage is over now.)"
+  options={["do", "does", "did", "was"]}
+  answer={2}
+  explanation="It's a finished event in the past → When did the outage start?"
+/>
+
+<Quiz
+  question="How often ___ your team release?"
+  options={["do", "does", "did", "is"]}
+  answer={1}
+  explanation="A habit, subject 'your team' (singular) → does."
+/>
+
+<Quiz
+  question="___ your teammates work in the same time zone?"
+  options={["Do", "Does", "Did", "Are"]}
+  answer={0}
+  explanation="A present fact, subject 'your teammates' (plural) → Do."
+/>
+
+<Quiz
+  question="Where ___ you learn React before this job?"
+  options={["do", "does", "did", "were"]}
+  answer={2}
+  explanation="'Before this job' is past → did."
+/>
+
+<Quiz
+  question="___ the deploy successful?"
+  options={["Do", "Does", "Did", "Was"]}
+  answer={3}
+  explanation="'Successful' is an adjective, so it needs 'be' → Was the deploy successful?"
+/>
+
+<Quiz
+  question="How ___ I get access to the staging database?"
+  options={["do", "does", "did", "am"]}
+  answer={0}
+  explanation="A present question, subject 'I' → How do I get access…?"
+/>
+
+<Quiz
+  question="___ she send you the logs this morning?"
+  options={["Do", "Does", "Did", "Was"]}
+  answer={2}
+  explanation="'This morning' is finished, so it's past → Did."
+/>
+
+### Part B: Make a question
+
+Choose *do*, *does* or *did* and make a question. When you see a question word in parentheses, start with it.
+
+<FixIt
+  label="Make a question"
+  strike={false}
+  sentence="The dashboard shows real-time data."
+  answers={["Does the dashboard show real-time data?", "Does the dashboard show realtime data?", "Does the dashboard show real time data?"]}
+  explanation="Present, 'the dashboard' = it → does … show."
+/>
+
+<FixIt
+  label="Make a question"
+  strike={false}
+  sentence="You pushed the fix last night."
+  answers={["Did you push the fix last night?"]}
+  explanation="Past → did … push."
+/>
+
+<FixIt
+  label="Make a question"
+  strike={false}
+  sentence="The developers use feature branches."
+  answers={["Do the developers use feature branches?"]}
+  explanation="Present, 'the developers' = they → do."
+/>
+
+<FixIt
+  label="Make a question"
+  strike={false}
+  sentence="(How long?) The build takes ten minutes."
+  answers={["How long does the build take?"]}
+  explanation="Present, 'the build' = it → does … take."
+/>
+
+<FixIt
+  label="Make a question"
+  strike={false}
+  sentence="(Where?) You found the bug."
+  answers={["Where did you find the bug?"]}
+  explanation="Past (found) → did … find."
+/>
+
+<FixIt
+  label="Make a question"
+  strike={false}
+  sentence="(Why?) They want to migrate to Go."
+  answers={["Why do they want to migrate to Go?"]}
+  explanation="Present, 'they' → do … want."
+/>
+
+### Part C: Fix the sentence
+
+<FixIt
+  sentence="Does you have any questions?"
+  answers={["Do you have any questions?"]}
+  explanation="'You' → do."
+/>
+
+<FixIt
+  sentence="Do the service use Redis?"
+  answers={["Does the service use Redis?"]}
+  explanation="'The service' = it → does."
+/>
+
+<FixIt
+  sentence="Do you finished the review yesterday?"
+  answers={["Did you finish the review yesterday?"]}
+  explanation="'Yesterday' → did, and then the base verb: finish."
+/>
+
+<FixIt
+  sentence="Did the release was on time?"
+  answers={["Was the release on time?"]}
+  explanation="With 'be' (was), don't use a helper."
+/>
+
+<FixIt
+  sentence="How long does the tests take?"
+  answers={["How long do the tests take?"]}
+  explanation="'The tests' is plural → do."
+/>
+
+<FixIt
+  sentence="What did she said in the meeting?"
+  answers={["What did she say in the meeting?"]}
+  explanation="After 'did', use the base verb: say."
+/>
+
+### Part D: Real situations
+
+**In a job interview.** At the end, you ask the interviewer some questions.
+
+<Quiz
+  question="You want to know how the team works today. Which question is correct?"
+  options={["How do the team handle code reviews?", "How does the team handle code reviews?", "How did the team handles code reviews?"]}
+  answer={1}
+  explanation="Present, 'the team' is singular → How does the team handle…?"
+/>
+
+<Quiz
+  question="You want to know about a typical day. Which question is correct?"
+  options={["What do the engineers do on a typical day?", "What does the engineers do on a typical day?", "What do the engineers does on a typical day?"]}
+  answer={0}
+  explanation="Present, 'the engineers' is plural → do. The main verb is also 'do' (base form)."
+/>
+
+<Quiz
+  question="You want to know why this job is open. Which question is correct?"
+  options={["Why did the last person leave?", "Why does the last person leave?", "Why did the last person left?"]}
+  answer={0}
+  explanation="The person left in the past → did + base verb: leave."
+/>
+
+**In a standup.** You talk to your teammates.
+
+<Quiz
+  question="You ask a teammate about yesterday. Which question is correct?"
+  options={["Did you finish the migration?", "Do you finished the migration?", "Did you finished the migration?"]}
+  answer={0}
+  explanation="Past → did + base verb: finish."
+/>
+
+<Quiz
+  question="You ask about a flaky test in general. Which question is correct?"
+  options={["Does this test fail often?", "Do this test fail often?", "Did this test fails often?"]}
+  answer={0}
+  explanation="A habit (often), 'this test' = it → does + base verb: fail."
+/>
+
+## Today's task
+
+**Record yourself** (on your phone is fine) asking **six questions about your real work**:
+
+- two with ***do***: *"Do we have a design doc for this?"*
+- two with ***does***: *"How does the retry logic work?"*
+- two with ***did***: *"Did the hotfix go out last night?"*
+
+Listen to your recording and check two things for each question: the helper is **before the subject**, and the main verb is in the **base form**.
