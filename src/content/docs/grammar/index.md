@@ -22,6 +22,8 @@ You don't need to know *all* English grammar to work in tech. You need about **t
 | 9 | [Conditionals: if…](./conditionals/) | Talk about scenarios and trade-offs |
 | 10 | [Passive voice](./passive-voice/) | Write incident reports and documentation |
 
+**Extra practice for lesson 1:** [do](./questions-do/) · [does](./questions-does/) · [did](./questions-did/) · [do, does or did?](./questions-mixed/)
+
 ## Quick reference
 
 | Situation | Structure | Example |
