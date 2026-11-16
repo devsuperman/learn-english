@@ -14,9 +14,6 @@ export default defineConfig({
       social: [
         { icon: 'github', label: 'GitHub', href: 'https://github.com/devsuperman/learn-english' },
       ],
-      editLink: {
-        baseUrl: 'https://github.com/devsuperman/learn-english/edit/main/',
-      },
       customCss: ['./src/styles/custom.css'],
       sidebar: [
         { label: 'Start here', items: [{ autogenerate: { directory: 'start-here' } }] },
